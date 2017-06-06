@@ -1,0 +1,71 @@
+/*
+estilos header
+*/
+.div_header{
+    width: 100%;
+    height: auto;
+    background: rgba(68, 68, 68, 0.7);
+    position: fixed;
+    z-index: 100;
+}
+
+.div_header_uno{
+    width: 37%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 2%;
+    float: left;
+
+}
+
+.div_header_dos{
+    width: 50%;
+    height: 80%;
+   float: right;
+   margin: 1%;
+}
+
+.items_nav{
+  font-size: 21px;
+  color: white;
+  margin-left: 3%;
+  margin-top: 5%;
+  float: left;
+  text-decoration:none;
+}
+
+.titulo_servicios{
+  color: black;
+  font-size: 22px;
+  font-weight:bold;
+  font-family: cursive;
+}
+
+.descripcion_servicios{
+  color: black;
+  font-size: 19px;
+  font-family: Arial;
+}
+
+.parrafo_servicio_domicilio{
+  font-size: 22px;
+  font-weight:bold;
+    font-family: Arial;
+    color: black;
+}
+
+.descripcion_nuestra_empresa{
+  color: black;
+  font-size: 19px;
+  font-family: Arial;
+}
+
+.descripcion_footer{
+  font-size: 19px;
+  color: #fff;
+  font-family: cursive;
+}
+
+.div_header_la24{
+  float: left;
+}
