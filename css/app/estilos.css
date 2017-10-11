@@ -4,7 +4,7 @@ estilos header
 .div_header{
     width: 100%;
     height: auto;
-    background: rgba(68, 68, 68, 0.7);
+    background: white;
     position: fixed;
     z-index: 100;
 }
@@ -23,6 +23,7 @@ estilos header
     height: 80%;
    float: right;
    margin: 1%;
+   color: black;
 }
 
 .items_nav{
