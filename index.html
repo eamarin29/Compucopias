@@ -27,6 +27,27 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/slider/responsiveslides.min.js"></script>
 
+    <!--script slider -->
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+
 </head>
 <body>
   <section class="div_header">
@@ -42,6 +63,23 @@
                <a style="color: black;" class="items_nav" href="#map-row">Contacto</a>
            </div>
        </section>
+
+<div class="div_slider">
+ <!-- Slideshow 4 -->
+         <div class="callbacks_container">
+             <ul  class="rslides" id="slider4">
+                 <li class="li_slider">
+                     <img class="img_slider" src="images/slides/1.jpg" alt=""/>
+                 </li>
+                 <li class="li_slider">
+                     <img class="img_slider" src="images/slides/2.jpg" alt=""/>
+                 </li>
+                 <li class="li_slider">
+                     <img class="img_slider" src="images/slides/3.jpg" alt=""/>
+                 </li>
+             </ul>
+         </div>
+</div>
 
 <br></br>
 <!-- services section -->
@@ -160,7 +198,7 @@
             </div>
     <div class="row">
       <div class="col-md-3 col-sm-6">
-        <div class="person"><img src="images/personal/team-1.jpg" alt="" class="img-responsive">
+        <div class="person"><img src="images/personal/geral.jpg" alt="" class="img-responsive">
           <div class="person-content">
             <h4>GERALDINE ARBELAEZ VALENCIA</h4>
             <h5 class="role">Administradora</h5>
@@ -199,7 +237,7 @@
         </div>
       </div>
              <div class="col-md-3 col-sm-6">
-        <div class="person"> <img src="images/personal/team-3.jpg" alt="" class="img-responsive">
+        <div class="person"> <img src="images/personal/laura.jpg" alt="" class="img-responsive">
           <div class="person-content">
             <h4>LAURA CRISTINA MAYNE REYES</h4>
             <h5 class="role">Diseñador Web</h5>
@@ -216,7 +254,7 @@
 <br>
 <div class="row">
                <div class="col-md-3 col-sm-6">
-        <div class="person"> <img src="images/personal/team-3.jpg" alt="" class="img-responsive">
+        <div class="person"> <img src="images/personal/paula.jpg" alt="" class="img-responsive">
           <div class="person-content">
             <h4>MARIA PAULA MIRANDA LOPEZ</h4>
             <h5 class="role">Diseñador Web</h5>
@@ -229,7 +267,7 @@
         </div>
       </div>
             <div class="col-md-3 col-sm-6">
-        <div class="person"> <img src="images/personal/team-2.jpg" alt="" class="img-responsive">
+        <div class="person"> <img src="images/personal/sofia.jpg" alt="" class="img-responsive">
           <div class="person-content">
             <h4>SOFIA MOSQUERA ESPINOSA</h4>
             <h5 class="role">Administrador</h5>
@@ -254,6 +292,7 @@
           </ul>
         </div>
       </div>
+
 </div>
   </div>
 </section>
